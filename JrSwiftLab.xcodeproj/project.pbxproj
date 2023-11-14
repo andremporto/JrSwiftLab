@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		A212E2E92B03F04B00D1C4CC /* JrSwiftLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */; };
-		A212E2EB2B03F04B00D1C4CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212E2EA2B03F04B00D1C4CC /* ContentView.swift */; };
 		A212E2ED2B03F04B00D1C4CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */; };
 		A212E2F02B03F04B00D1C4CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A212E2EF2B03F04B00D1C4CC /* Preview Assets.xcassets */; };
+		A2B114E72B03F25A0000B910 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114E62B03F25A0000B910 /* SafariView.swift */; };
+		A2B114EB2B03F2A70000B910 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */; };
+		A2B114ED2B03F2E70000B910 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EC2B03F2E70000B910 /* AFButton.swift */; };
+		A2B114EF2B03F2FF0000B910 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */; };
+		A2B114F12B03F32C0000B910 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F02B03F32C0000B910 /* Framework.swift */; };
+		A2B114F52B03F4E80000B910 /* FramworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F42B03F4E80000B910 /* FramworkGridViewModel.swift */; };
+		A2B114F72B03F5490000B910 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F62B03F5490000B910 /* FrameworkGridView.swift */; };
+		A2B114F92B03F56D0000B910 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A212E2E52B03F04B00D1C4CC /* JrSwiftLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JrSwiftLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JrSwiftLabApp.swift; sourceTree = "<group>"; };
-		A212E2EA2B03F04B00D1C4CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A212E2EF2B03F04B00D1C4CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2B114E62B03F25A0000B910 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		A2B114EC2B03F2E70000B910 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		A2B114F02B03F32C0000B910 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		A2B114F42B03F4E80000B910 /* FramworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworkGridViewModel.swift; sourceTree = "<group>"; };
+		A2B114F62B03F5490000B910 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */,
-				A212E2EA2B03F04B00D1C4CC /* ContentView.swift */,
+				A212E2F62B03F0EB00D1C4CC /* UIKit Components */,
+				A212E2F72B03F10500D1C4CC /* Views */,
+				A212E2F82B03F11500D1C4CC /* Model */,
+				A212E2F92B03F12000D1C4CC /* Screens */,
 				A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */,
 				A212E2EE2B03F04B00D1C4CC /* Preview Content */,
 			);
@@ -65,6 +82,74 @@
 				A212E2EF2B03F04B00D1C4CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A212E2F62B03F0EB00D1C4CC /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114E62B03F25A0000B910 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		A212E2F72B03F10500D1C4CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114E82B03F2830000B910 /* View */,
+				A2B114E92B03F2890000B910 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A212E2F82B03F11500D1C4CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114F02B03F32C0000B910 /* Framework.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A212E2F92B03F12000D1C4CC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114F22B03F34F0000B910 /* FrameworkGridView */,
+				A2B114F32B03F3610000B910 /* FrameworkDetailView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A2B114E82B03F2830000B910 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2B114E92B03F2890000B910 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114EC2B03F2E70000B910 /* AFButton.swift */,
+				A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		A2B114F22B03F34F0000B910 /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114F42B03F4E80000B910 /* FramworkGridViewModel.swift */,
+				A2B114F62B03F5490000B910 /* FrameworkGridView.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
+		A2B114F32B03F3610000B910 /* FrameworkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */,
+			);
+			path = FrameworkDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A212E2EB2B03F04B00D1C4CC /* ContentView.swift in Sources */,
+				A2B114ED2B03F2E70000B910 /* AFButton.swift in Sources */,
+				A2B114F72B03F5490000B910 /* FrameworkGridView.swift in Sources */,
+				A2B114E72B03F25A0000B910 /* SafariView.swift in Sources */,
+				A2B114F52B03F4E80000B910 /* FramworkGridViewModel.swift in Sources */,
+				A2B114EB2B03F2A70000B910 /* FrameworkTitleView.swift in Sources */,
 				A212E2E92B03F04B00D1C4CC /* JrSwiftLabApp.swift in Sources */,
+				A2B114F12B03F32C0000B910 /* Framework.swift in Sources */,
+				A2B114EF2B03F2FF0000B910 /* XDismissButton.swift in Sources */,
+				A2B114F92B03F56D0000B910 /* FrameworkDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,6 +367,8 @@
 				DEVELOPMENT_TEAM = 2Q448G8AH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jr. SwiftLab";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +398,8 @@
 				DEVELOPMENT_TEAM = 2Q448G8AH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jr. SwiftLab";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
