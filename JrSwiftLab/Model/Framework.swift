@@ -15,13 +15,13 @@ struct Framework: Hashable, Identifiable {
     let description: String
 }
 
-struct Roadmap: Hashable, Identifiable {
-    var id = UUID()
-    let name: String
-    let imageName: String
-    let urlString: String
-    let description: String
-}
+//struct Roadmap: Hashable, Identifiable {
+//    var id = UUID()
+//    let name: String
+//    let imageName: String
+//    let urlString: String
+//    let description: String
+//}
 
 struct MockData {
     
@@ -30,7 +30,7 @@ struct MockData {
                                           urlString: "https://developer.apple.com/augmented-reality/arkit",
                                           description: "Em Swift, o ARC (Automatic Reference Counting) é um sistema de gerenciamento de memória que rastreia e gerencia o uso de memória para ajudar a evitar vazamentos de memória em seu código. O ARC automaticamente rastreia o número de referências a uma instância de classe e libera automaticamente a memória associada quando não há mais referências a essa instância.\n\nQuando você cria uma nova instância de uma classe em Swift.")
     
-    static let frameworks = [
+    static let basic = [
         
         Framework(name: "Swift",
                   imageName: "swift",
@@ -42,15 +42,28 @@ struct MockData {
                   urlString: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/aboutswift",
                   description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift. Build user interfaces for any Apple device using just one set of tools and APIs.\n\nWith a declarative Swift syntax that’s easy to read and natural to write, SwiftUI works seamlessly with new Xcode design tools to keep your code and design perfectly in sync. Automatic support for Dynamic Type, Dark Mode, localization, and accessibility means your first line of SwiftUI code is already the most powerful UI code you’ve ever written."),
         
+        Framework(name: "UIKit",
+                  imageName: "uikit",
+                  urlString: "https://developer.apple.com/xcode/swiftui",
+                  description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift. Build user interfaces for any Apple device using just one set of tools and APIs.\n\nWith a declarative Swift syntax that’s easy to read and natural to write, SwiftUI works seamlessly with new Xcode design tools to keep your code and design perfectly in sync. Automatic support for Dynamic Type, Dark Mode, localization, and accessibility means your first line of SwiftUI code is already the most powerful UI code you’ve ever written."),
+        
         Framework(name: "SwiftUI",
                   imageName: "swiftui",
                   urlString: "https://developer.apple.com/xcode/swiftui",
                   description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift. Build user interfaces for any Apple device using just one set of tools and APIs.\n\nWith a declarative Swift syntax that’s easy to read and natural to write, SwiftUI works seamlessly with new Xcode design tools to keep your code and design perfectly in sync. Automatic support for Dynamic Type, Dark Mode, localization, and accessibility means your first line of SwiftUI code is already the most powerful UI code you’ve ever written."),
         
-        Framework(name: "Test Flight",
-                  imageName: "test-flight",
-                  urlString: "https://developer.apple.com/testflight",
-                  description: "TestFlight makes it easy to invite users to test your apps and app clip experiences and collect valuable feedback before releasing your apps on the App Store.\n\nYou can invite up to 10,000 testers using just their email address or by sharing a public link."),
+        
+    ]
+    
+    static let roadmap = [
+        
+        Framework(name: "Roadmap",
+                  imageName: "roadmap",
+                  urlString: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/aboutswift",
+                  description: "➡️ Sintaxe e Conceitos Básicos Swift:\n• Demonstrar familiaridade com a sintaxe básica da linguagem Swift.\n• Compreender o uso de variáveis, constantes, tipos de dados e operadores.\n\n➡️ Interface do Usuário (UI) e Storyboards:\n• Experiência com o UIKit e Interface Builder.\n• Habilidade para criar interfaces de usuário simples, conectar elementos e navegar entre telas.\n\n➡️ Estruturas de Controle de Fluxo:\n• Trabalhar com condicionais (if, else) e loops (for, while).\n• Utilizar estruturas de controle de fluxo para resolver problemas simples.\n\n➡️ Conceitos de Orientação a Objetos (OOP):\n• Entender o básico de classes, objetos, herança e polimorfismo.\n• Conhecer o uso de protocolos e delegação.\n\n➡️ Acesso a Dados:\n• Conhecimento sobre persistência de dados usando UserDefaults e Core Data.\n• Capacidade de realizar requisições HTTP básicas e manipular dados JSON.\n\n➡️ Programação Assíncrona:\n• Compreensão básica de programação assíncrona usando Grand Central Dispatch (GCD).\n• Utilização de closures para operações assíncronas.\n\n➡️ Testes e Depuração:\n• Familiaridade com testes unitários e XCTest framework.\n• Capacidade de identificar e corrigir bugs usando o debugger do Xcode.\n\n➡️ Boas Práticas de Desenvolvimento iOS:\n• Conhecimento de boas práticas de design de interface usando AutoLayout e Constraints.\n• Compreensão de gestos, animações e padrões de projeto.\n\n➡️ Ferramentas e Ambiente de Desenvolvimento:\n• Proficiência no uso do Xcode.\n• Entendimento do ciclo de vida de uma aplicação iOS.\n\n➡️ Colaboração e Comunicação:\n• Experiência com controle de versão usando Git.\n• Capacidade de explicar decisões de design e comunicar efetivamente.\n\n➡️ Resolução de Problemas Práticos:\n• Ser capaz de resolver problemas práticos de programação durante a entrevista.\n• Pensamento lógico e habilidades de resolução de problemas.\n\n➡️ Atitude e Aprendizado Contínuo:\n• Demonstrar disposição para aprender e crescer como desenvolvedor.\n•Mostrar interesse em se manter atualizado com as últimas tecnologias e práticas.\n\nLembre-se de que as entrevistas podem variar de empresa para empresa, e é sempre uma boa ideia revisar a descrição da vaga específica para entender as prioridades do empregador.\n\nPraticar resolvendo problemas de programação, construir projetos práticos e revisar os conceitos fundamentais são maneiras eficazes de se preparar para uma entrevista de desenvolvedor iOS júnior."),
+    ]
+    
+    static let lessons = [
         
         Framework(name: "ARC",
                   imageName: "app",
@@ -61,6 +74,9 @@ struct MockData {
                   imageName: "app",
                   urlString: "https://www.linkedin.com/pulse/segredos-segredosos-dos-optionals-em-swift-um-guia-para-andr%C3%A9-porto",
                   description: "Um tipo que representa um valor envolvido ou a ausência de um valor.\n\nVocê usa o tipo Optional sempre que usa valores opcionais, mesmo que nunca digite a palavra Optional. O sistema de tipos do Swift geralmente mostra o nome do tipo envolvido com um ponto de interrogação à direita (?) em vez de mostrar o nome completo do tipo. Por exemplo, se uma variável tiver o tipo Int?, essa é apenas outra forma de escrever Optional<Int>. A forma abreviada é preferível para facilitar a leitura e a escrita do código."),
+    ]
+    
+    static let frameworks = [
         
         Framework(name: "App Clips",
                   imageName: "app-clip",
@@ -122,6 +138,11 @@ struct MockData {
                   urlString: "https://developer.apple.com/spritekit",
                   description: "The SpriteKit framework makes it easy to create high-performance, battery-efficient 2D games.\n\nWith support for custom OpenGL ES shaders and lighting, integration with SceneKit, and advanced new physics effects and animations, you can add force fields, detect collisions, and generate new lighting effects in your games."),
         
+        Framework(name: "Test Flight",
+                  imageName: "test-flight",
+                  urlString: "https://developer.apple.com/testflight",
+                  description: "TestFlight makes it easy to invite users to test your apps and app clip experiences and collect valuable feedback before releasing your apps on the App Store.\n\nYou can invite up to 10,000 testers using just their email address or by sharing a public link."),
+        
         Framework(name: "Wallet",
                   imageName: "wallet",
                   urlString: "https://developer.apple.com/wallet/get-started",
@@ -131,13 +152,5 @@ struct MockData {
                   imageName: "widgetkit",
                   urlString: "https://developer.apple.com/widgets",
                   description: "Easily build widgets and make them available across iOS, iPadOS, and macOS using the WidgetKit framework and the new widget API for SwiftUI. Widgets now come in multiple sizes, and users can visit the new widget gallery to search, preview sizes, and place them anywhere on the Home screen to access important details at a glance.\n\nThey can also add Smart Stacks — sets of widgets that use on-device intelligence to surface the right widget at the right moment, based on factors like time, location, and activity.")
-    ]
-    
-    static let roadmap = [
-        
-        Framework(name: "Swift",
-                  imageName: "swift",
-                  urlString: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/aboutswift",
-                  description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift. Build user interfaces for any Apple device using just one set of tools and APIs.\n\nWith a declarative Swift syntax that’s easy to read and natural to write, SwiftUI works seamlessly with new Xcode design tools to keep your code and design perfectly in sync. Automatic support for Dynamic Type, Dark Mode, localization, and accessibility means your first line of SwiftUI code is already the most powerful UI code you’ve ever written."),
     ]
 }
