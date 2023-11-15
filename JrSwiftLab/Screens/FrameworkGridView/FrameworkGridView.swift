@@ -14,7 +14,7 @@ struct FrameworkGridView: View {
     var body: some View {
         NavigationView {
             List {
-                Section("Base") {
+                Section("Base inicial") {
                     ForEach(MockData.basic) { framework in
                         NavigationLink(
                             destination: FrameworkDetailView(framework: framework,
@@ -33,14 +33,14 @@ struct FrameworkGridView: View {
                     }
                 }
                 Section("Estudos") {
-                                    ForEach(MockData.lessons) { framework in
-                                        NavigationLink(
-                                            destination: FrameworkDetailView(framework: framework,
-                                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
-                                                                                 FrameworkTitleView(framework: framework)
-                                                                             }
-                                    }
-                                }
+                    ForEach(MockData.lessons) { framework in
+                        NavigationLink(
+                            destination: FrameworkDetailView(framework: framework,
+                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                 FrameworkTitleView(framework: framework)
+                                                             }
+                    }
+                }
                 Section("Frameworks") {
                     ForEach(MockData.frameworks) { framework in
                         NavigationLink(
@@ -50,14 +50,6 @@ struct FrameworkGridView: View {
                                                              }
                     }
                 }
-                
-                //                ForEach(MockData.frameworks) { framework in
-                //                    NavigationLink(
-                //                        destination: FrameworkDetailView(framework: framework,
-                //                                                         isShowDetailView: $viewModel.isShowingDetailView)) {
-                //                                                             FrameworkTitleView(framework: framework)
-                //                                                         }
-                //                }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
