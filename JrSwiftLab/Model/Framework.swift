@@ -15,6 +15,14 @@ struct Framework: Hashable, Identifiable {
     let description: String
 }
 
+struct Roadmap: Hashable, Identifiable {
+    var id = UUID()
+    let name: String
+    let imageName: String
+    let urlString: String
+    let description: String
+}
+
 struct MockData {
     
     static let sampleFramwork = Framework(name: "ARKit",
@@ -123,5 +131,13 @@ struct MockData {
                   imageName: "widgetkit",
                   urlString: "https://developer.apple.com/widgets",
                   description: "Easily build widgets and make them available across iOS, iPadOS, and macOS using the WidgetKit framework and the new widget API for SwiftUI. Widgets now come in multiple sizes, and users can visit the new widget gallery to search, preview sizes, and place them anywhere on the Home screen to access important details at a glance.\n\nThey can also add Smart Stacks — sets of widgets that use on-device intelligence to surface the right widget at the right moment, based on factors like time, location, and activity.")
+    ]
+    
+    static let roadmap = [
+        
+        Framework(name: "Swift",
+                  imageName: "swift",
+                  urlString: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/aboutswift",
+                  description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift. Build user interfaces for any Apple device using just one set of tools and APIs.\n\nWith a declarative Swift syntax that’s easy to read and natural to write, SwiftUI works seamlessly with new Xcode design tools to keep your code and design perfectly in sync. Automatic support for Dynamic Type, Dark Mode, localization, and accessibility means your first line of SwiftUI code is already the most powerful UI code you’ve ever written."),
     ]
 }

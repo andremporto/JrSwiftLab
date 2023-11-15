@@ -14,6 +14,25 @@ struct FrameworkGridView: View {
     var body: some View {
         NavigationView {
             List {
+                Section("Aprendizado basico") {
+                    ForEach(MockData.frameworks) { framework in
+                        NavigationLink(
+                            destination: FrameworkDetailView(framework: framework,
+                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                 FrameworkTitleView(framework: framework)
+                                                             }
+                    }
+                }
+                Section("Roadmap") {
+                    ForEach(MockData.roadmap) { framework in
+                        NavigationLink(
+                            destination: FrameworkDetailView(framework: framework,
+                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                 FrameworkTitleView(framework: framework)
+                                                             }
+                    }
+                }
+                
                 ForEach(MockData.frameworks) { framework in
                     NavigationLink(
                         destination: FrameworkDetailView(framework: framework,
