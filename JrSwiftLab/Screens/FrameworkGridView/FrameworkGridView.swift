@@ -15,17 +15,37 @@ struct FrameworkGridView: View {
         NavigationView {
             List {
                 Section("Roadmap") {
-                                    ForEach(MockData.roadmap) { framework in
-                                        NavigationLink(
-                                            destination: FrameworkDetailView(framework: framework,
-                                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
-                                                                                 FrameworkTitleView(framework: framework)
-                                                                             }
-                                    }
-                                }
+                    ForEach(MockData.roadmap) { framework in
+                        NavigationLink(
+                            destination: FrameworkDetailView(framework: framework,
+                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                 FrameworkTitleView(framework: framework)
+                                                             }
+                    }
+                }
                 
                 Section("Base inicial") {
                     ForEach(MockData.basic) { framework in
+                        NavigationLink(
+                            destination: FrameworkDetailView(framework: framework,
+                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                 FrameworkTitleView(framework: framework)
+                                                             }
+                    }
+                }
+                
+                Section("IDE") {
+                    ForEach(MockData.ide) { framework in
+                        NavigationLink(
+                            destination: FrameworkDetailView(framework: framework,
+                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                 FrameworkTitleView(framework: framework)
+                                                             }
+                    }
+                }
+                
+                Section("Versionamento de código") {
+                    ForEach(MockData.versioning) { framework in
                         NavigationLink(
                             destination: FrameworkDetailView(framework: framework,
                                                              isShowDetailView: $viewModel.isShowingDetailView)) {
