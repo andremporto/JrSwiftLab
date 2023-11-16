@@ -14,6 +14,16 @@ struct FrameworkGridView: View {
     var body: some View {
         NavigationView {
             List {
+                Section("Roadmap") {
+                                    ForEach(MockData.roadmap) { framework in
+                                        NavigationLink(
+                                            destination: FrameworkDetailView(framework: framework,
+                                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                                 FrameworkTitleView(framework: framework)
+                                                                             }
+                                    }
+                                }
+                
                 Section("Base inicial") {
                     ForEach(MockData.basic) { framework in
                         NavigationLink(
@@ -23,15 +33,7 @@ struct FrameworkGridView: View {
                                                              }
                     }
                 }
-                Section("Roadmap") {
-                    ForEach(MockData.roadmap) { framework in
-                        NavigationLink(
-                            destination: FrameworkDetailView(framework: framework,
-                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
-                                                                 FrameworkTitleView(framework: framework)
-                                                             }
-                    }
-                }
+                
                 Section("Estudos") {
                     ForEach(MockData.lessons) { framework in
                         NavigationLink(
@@ -41,8 +43,19 @@ struct FrameworkGridView: View {
                                                              }
                     }
                 }
-                Section("Frameworks") {
+                
+                Section("Bibliotecas") {
                     ForEach(MockData.frameworks) { framework in
+                        NavigationLink(
+                            destination: FrameworkDetailView(framework: framework,
+                                                             isShowDetailView: $viewModel.isShowingDetailView)) {
+                                                                 FrameworkTitleView(framework: framework)
+                                                             }
+                    }
+                }
+                
+                Section("Arquivos") {
+                    ForEach(MockData.files) { framework in
                         NavigationLink(
                             destination: FrameworkDetailView(framework: framework,
                                                              isShowDetailView: $viewModel.isShowingDetailView)) {
