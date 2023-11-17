@@ -10,9 +10,10 @@ import SwiftUI
 struct FrameworkGridView: View {
     
     @StateObject var viewModel = FrameworkGridViewModel()
+    @State private var searchTerm = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 Section("Roadmap") {
                     ForEach(MockData.roadmap) { framework in
@@ -96,6 +97,7 @@ struct FrameworkGridView: View {
                     }
                 }
             }
+            .searchable(text: $searchTerm, prompt: "Buscar")
         }
         .accentColor(Color(.label))
     }
