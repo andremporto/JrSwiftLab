@@ -7,15 +7,33 @@
 
 import SwiftUI
 
+
 final class FrameworkViewModel: ObservableObject {
-    
+        
+    @Published var searchTerm = "" {
+        didSet {
+            /// sem pesquisa
+            guard searchTerm.isEmpty == false else {
+                data = MockFrameworks.sections
+                return
+            }
+            /// com pesquisa            
+            data = []
+            MockFrameworks.sections.forEach { section in
+                let result = section.frameworks.filter { $0.name.lowercased().contains(searchTerm.lowercased())}
+                if result.isEmpty == false {
+                    data.append(SectionData(name: section.name, frameworks: result))
+                }
+            }
+        }
+    }
     @Published var isShowingDetailView = false
     var selectedFramework: Framework? {
         didSet {
             isShowingDetailView = true
         }
     }
-    
+    @Published var data: [SectionData] = MockFrameworks.sections
     
     let colums: [GridItem] = [
         GridItem(.flexible()),
@@ -23,3 +41,28 @@ final class FrameworkViewModel: ObservableObject {
         GridItem(.flexible())
     ]
 }
+
+
+//final class FrameworkViewModel: ObservableObject {
+//
+//    @Published var searchTerm = "" {
+//        didSet {
+//            data = searchTerm.isEmpty
+//                ? MockData.frameworks
+//                : data.filter { $0.name.lowercased().contains(searchTerm.lowercased())}
+//        }
+//    }
+//    @Published var isShowingDetailView = false
+//    var selectedFramework: Framework? {
+//        didSet {
+//            isShowingDetailView = true
+//        }
+//    }
+//    @Published var data: [Framework] = MockData.frameworks
+//    
+//    let colums: [GridItem] = [
+//        GridItem(.flexible()),
+//        GridItem(.flexible()),
+//        GridItem(.flexible())
+//    ]
+//}

@@ -7,12 +7,29 @@
 
 import SwiftUI
 
+struct SectionData: Hashable, Identifiable {
+    var id = UUID()
+    var name: String
+    var frameworks: [Framework]
+}
+
 struct Framework: Hashable, Identifiable {
     var id = UUID()
     let name: String
     let imageName: String
     let urlString: String
     let description: String
+}
+
+struct MockFrameworks {
+    
+    static let sections = [
+        SectionData(name: "Roadmap", frameworks: MockData.roadmap),
+        SectionData(name: "Básico", frameworks: MockData.basic),
+        SectionData(name: "IDE", frameworks: MockData.ide),
+        SectionData(name: "Versionamento de código", frameworks: MockData.versioning)
+    ]
+    
 }
 
 struct MockData {
