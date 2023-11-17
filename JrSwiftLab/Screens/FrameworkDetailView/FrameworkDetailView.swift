@@ -21,7 +21,7 @@ struct FrameworkDetailView: View {
             ScrollView {
                 Text(framework.description)
                     .font(.body)
-                    .padding()
+                    .padding(20)
             }
             
             Spacer()
