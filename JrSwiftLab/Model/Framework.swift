@@ -27,9 +27,11 @@ struct MockFrameworks {
         SectionData(name: "Roadmap", frameworks: MockData.roadmap),
         SectionData(name: "Básico", frameworks: MockData.basic),
         SectionData(name: "IDE", frameworks: MockData.ide),
-        SectionData(name: "Versionamento de código", frameworks: MockData.versioning)
+        SectionData(name: "Versionamento de código", frameworks: MockData.versioning),
+        SectionData(name: "Aulas", frameworks: MockData.lessons),
+        SectionData(name: "Bibliotecas", frameworks: MockData.frameworks),
+        SectionData(name: "Arquivos", frameworks: MockData.files)
     ]
-    
 }
 
 struct MockData {
@@ -115,6 +117,11 @@ struct MockData {
                   imageName: "app",
                   urlString: "https://www.linkedin.com/pulse/segredos-segredosos-dos-optionals-em-swift-um-guia-para-andr%C3%A9-porto",
                   description: "Um tipo que representa um valor envolvido ou a ausência de um valor.\n\nVocê usa o tipo Optional sempre que usa valores opcionais, mesmo que nunca digite a palavra Optional. O sistema de tipos do Swift geralmente mostra o nome do tipo envolvido com um ponto de interrogação à direita (?) em vez de mostrar o nome completo do tipo.\n\nPor exemplo, se uma variável tiver o tipo Int?, essa é apenas outra forma de escrever Optional<Int>. A forma abreviada é preferível para facilitar a leitura e a escrita do código."),
+        
+        Framework(name: "Teste",
+                          imageName: "app",
+                          urlString: "https://www.linkedin.com/pulse/segredos-segredosos-dos-optionals-em-swift-um-guia-para-andr%C3%A9-porto",
+                          description: "Um tipo que representa um valor envolvido ou a ausência de um valor.\n\nVocê usa o tipo Optional sempre que usa valores opcionais, mesmo que nunca digite a palavra Optional. O sistema de tipos do Swift geralmente mostra o nome do tipo envolvido com um ponto de interrogação à direita (?) em vez de mostrar o nome completo do tipo.\n\nPor exemplo, se uma variável tiver o tipo Int?, essa é apenas outra forma de escrever Optional<Int>. A forma abreviada é preferível para facilitar a leitura e a escrita do código."),
     ]
     
     static let frameworks = [
@@ -208,3 +215,5 @@ struct MockData {
                   description: "Dicas para escrever um currículo eficaz:\n\n• Personalize seu currículo para cada vaga. Leia a descrição da vaga com atenção e destaque as habilidades e experiências mais relevantes.\n• Use uma linguagem clara e concisa. Evite jargões técnicos e frases longas e complicadas.\n• Use números e dados para quantificar seus resultados. Isso ajudará os recrutadores a entender o impacto de seu trabalho.\n• Revise seu currículo com atenção. Certifique-se de que não haja erros de ortografia ou gramática.\n\nVou te ajudar com um modelo de currículo para a área de desenvolvimento iOS com foco em Swift. Lembre-se de que é importante adaptar o modelo às suas experiências específicas.\n\nClique no botão “Saiba mais” para baixar o modelo!"),
     ]
 }
+
+

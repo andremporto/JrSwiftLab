@@ -41,28 +41,3 @@ final class FrameworkViewModel: ObservableObject {
         GridItem(.flexible())
     ]
 }
-
-
-//final class FrameworkViewModel: ObservableObject {
-//
-//    @Published var searchTerm = "" {
-//        didSet {
-//            data = searchTerm.isEmpty
-//                ? MockData.frameworks
-//                : data.filter { $0.name.lowercased().contains(searchTerm.lowercased())}
-//        }
-//    }
-//    @Published var isShowingDetailView = false
-//    var selectedFramework: Framework? {
-//        didSet {
-//            isShowingDetailView = true
-//        }
-//    }
-//    @Published var data: [Framework] = MockData.frameworks
-//    
-//    let colums: [GridItem] = [
-//        GridItem(.flexible()),
-//        GridItem(.flexible()),
-//        GridItem(.flexible())
-//    ]
-//}
