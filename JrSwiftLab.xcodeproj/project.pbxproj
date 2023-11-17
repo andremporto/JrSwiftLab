@@ -15,9 +15,9 @@
 		A2B114ED2B03F2E70000B910 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EC2B03F2E70000B910 /* AFButton.swift */; };
 		A2B114EF2B03F2FF0000B910 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */; };
 		A2B114F12B03F32C0000B910 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F02B03F32C0000B910 /* Framework.swift */; };
-		A2B114F52B03F4E80000B910 /* FramworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F42B03F4E80000B910 /* FramworkGridViewModel.swift */; };
-		A2B114F72B03F5490000B910 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F62B03F5490000B910 /* FrameworkGridView.swift */; };
 		A2B114F92B03F56D0000B910 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */; };
+		D91780222B07AB9E0079EE04 /* FrameworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91780212B07AB9E0079EE04 /* FrameworkViewModel.swift */; };
+		D91780242B07ABAA0079EE04 /* FrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91780232B07ABAA0079EE04 /* FrameworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +30,9 @@
 		A2B114EC2B03F2E70000B910 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		A2B114F02B03F32C0000B910 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
-		A2B114F42B03F4E80000B910 /* FramworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworkGridViewModel.swift; sourceTree = "<group>"; };
-		A2B114F62B03F5490000B910 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		D91780212B07AB9E0079EE04 /* FrameworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewModel.swift; sourceTree = "<group>"; };
+		D91780232B07ABAA0079EE04 /* FrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */,
-				A212E2F62B03F0EB00D1C4CC /* UIKit Components */,
-				A212E2F72B03F10500D1C4CC /* Views */,
+				D917801C2B07AB4F0079EE04 /* Features */,
+				D917801A2B07AA580079EE04 /* Componentes */,
 				A212E2F82B03F11500D1C4CC /* Model */,
-				A212E2F92B03F12000D1C4CC /* Screens */,
-				A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */,
 				A212E2EE2B03F04B00D1C4CC /* Preview Content */,
+				A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */,
 			);
 			path = JrSwiftLab;
 			sourceTree = "<group>";
@@ -84,21 +83,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A212E2F62B03F0EB00D1C4CC /* UIKit Components */ = {
+		A212E2F62B03F0EB00D1C4CC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				A2B114E62B03F25A0000B910 /* SafariView.swift */,
 			);
-			path = "UIKit Components";
-			sourceTree = "<group>";
-		};
-		A212E2F72B03F10500D1C4CC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A2B114E82B03F2830000B910 /* View */,
-				A2B114E92B03F2890000B910 /* Buttons */,
-			);
-			path = Views;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		A212E2F82B03F11500D1C4CC /* Model */ = {
@@ -107,23 +97,6 @@
 				A2B114F02B03F32C0000B910 /* Framework.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		A212E2F92B03F12000D1C4CC /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				A2B114F22B03F34F0000B910 /* FrameworkGridView */,
-				A2B114F32B03F3610000B910 /* FrameworkDetailView */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		A2B114E82B03F2830000B910 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A2B114E92B03F2890000B910 /* Buttons */ = {
@@ -135,21 +108,72 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		A2B114F22B03F34F0000B910 /* FrameworkGridView */ = {
+		D917801A2B07AA580079EE04 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
-				A2B114F42B03F4E80000B910 /* FramworkGridViewModel.swift */,
-				A2B114F62B03F5490000B910 /* FrameworkGridView.swift */,
+				D917801B2B07AAC10079EE04 /* Cell */,
+				A212E2F62B03F0EB00D1C4CC /* UIKit */,
+				A2B114E92B03F2890000B910 /* Buttons */,
 			);
-			path = FrameworkGridView;
+			path = Componentes;
 			sourceTree = "<group>";
 		};
-		A2B114F32B03F3610000B910 /* FrameworkDetailView */ = {
+		D917801B2B07AAC10079EE04 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D917801C2B07AB4F0079EE04 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D917801D2B07AB580079EE04 /* Framework */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D917801D2B07AB580079EE04 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D917801E2B07AB710079EE04 /* View */,
+				D917801F2B07AB790079EE04 /* ViewModel */,
+				D91780252B07AEE80079EE04 /* Detail */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		D917801E2B07AB710079EE04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D91780232B07ABAA0079EE04 /* FrameworkView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D917801F2B07AB790079EE04 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D91780212B07AB9E0079EE04 /* FrameworkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D91780252B07AEE80079EE04 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D91780262B07AEFB0079EE04 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D91780262B07AEFB0079EE04 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */,
 			);
-			path = FrameworkDetailView;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,15 +246,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91780242B07ABAA0079EE04 /* FrameworkView.swift in Sources */,
 				A2B114ED2B03F2E70000B910 /* AFButton.swift in Sources */,
-				A2B114F72B03F5490000B910 /* FrameworkGridView.swift in Sources */,
 				A2B114E72B03F25A0000B910 /* SafariView.swift in Sources */,
-				A2B114F52B03F4E80000B910 /* FramworkGridViewModel.swift in Sources */,
 				A2B114EB2B03F2A70000B910 /* FrameworkTitleView.swift in Sources */,
 				A212E2E92B03F04B00D1C4CC /* JrSwiftLabApp.swift in Sources */,
 				A2B114F12B03F32C0000B910 /* Framework.swift in Sources */,
 				A2B114EF2B03F2FF0000B910 /* XDismissButton.swift in Sources */,
 				A2B114F92B03F56D0000B910 /* FrameworkDetailView.swift in Sources */,
+				D91780222B07AB9E0079EE04 /* FrameworkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JrSwiftLab/Preview Content\"";
-				DEVELOPMENT_TEAM = 2Q448G8AH2;
+				DEVELOPMENT_TEAM = Q8Z26LUEQ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Jr. SwiftLab";
@@ -395,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JrSwiftLab/Preview Content\"";
-				DEVELOPMENT_TEAM = 2Q448G8AH2;
+				DEVELOPMENT_TEAM = Q8Z26LUEQ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Jr. SwiftLab";

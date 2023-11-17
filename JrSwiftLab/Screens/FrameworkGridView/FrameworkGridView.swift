@@ -10,11 +10,16 @@ import SwiftUI
 struct FrameworkGridView: View {
     
     @StateObject var viewModel = FrameworkGridViewModel()
+    @State private var searchTerm = ""
+    
+//    var filteredMockData: [MockData] {
+//        return frameworks.filter(<#T##Predicate<Self.Element>#>)
+//    }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                Section("Roadmap") {
+                Section("Começe por aqui") {
                     ForEach(MockData.roadmap) { framework in
                         NavigationLink(
                             destination: FrameworkDetailView(framework: framework,
@@ -96,6 +101,8 @@ struct FrameworkGridView: View {
                     }
                 }
             }
+            .fontWeight(.bold)
+            .searchable(text: $searchTerm, prompt: "Buscar")
         }
         .accentColor(Color(.label))
     }
@@ -104,5 +111,5 @@ struct FrameworkGridView: View {
 
 #Preview {
     FrameworkGridView()
-        .preferredColorScheme(.dark)
+//        .preferredColorScheme(.dark)
 }
