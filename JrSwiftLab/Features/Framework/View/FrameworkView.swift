@@ -11,9 +11,10 @@ import SwiftUI
 struct FrameworkView: View {
     
     @ObservedObject var viewModel = FrameworkViewModel()
+    @State private var searchTerm = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 section("Roadmap", data: MockData.roadmap)
                 section("Base inicial", data: MockData.basic)
@@ -35,6 +36,8 @@ struct FrameworkView: View {
                     }
                 }
             }
+            .searchable(text: $searchTerm, prompt: "Buscar")
+
         }
         .accentColor(Color(.label))
     }
