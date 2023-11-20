@@ -17,10 +17,10 @@ struct FrameworkTitleView: View {
                 .resizable()
                 .frame(width: 60, height: 60)
             Text(framework.name)
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.semibold)
                 .scaledToFit()
-                .minimumScaleFactor(0.6)
+                .minimumScaleFactor(0.5)
                 .padding()
         }
     }
