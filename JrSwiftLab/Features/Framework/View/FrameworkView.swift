@@ -30,7 +30,10 @@ struct FrameworkView: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack {
-                        Image(systemName: "swift")
+                        Image(.logo)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 35, height: 35)
                             .foregroundStyle(Gradient(colors: [.orange, .red]))
                         Text("Jr. SwiftLab")
                             .font(.title)
