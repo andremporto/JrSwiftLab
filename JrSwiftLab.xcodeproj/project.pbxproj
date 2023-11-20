@@ -10,6 +10,8 @@
 		A212E2E92B03F04B00D1C4CC /* JrSwiftLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */; };
 		A212E2ED2B03F04B00D1C4CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */; };
 		A212E2F02B03F04B00D1C4CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A212E2EF2B03F04B00D1C4CC /* Preview Assets.xcassets */; };
+		A282D6532B0B8DF000C6B7F2 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282D6522B0B8DF000C6B7F2 /* SplashScreenView.swift */; };
+		A282D6552B0B8E4D00C6B7F2 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282D6542B0B8E4D00C6B7F2 /* ContainerView.swift */; };
 		A2B114E72B03F25A0000B910 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114E62B03F25A0000B910 /* SafariView.swift */; };
 		A2B114EB2B03F2A70000B910 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */; };
 		A2B114ED2B03F2E70000B910 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EC2B03F2E70000B910 /* AFButton.swift */; };
@@ -25,6 +27,8 @@
 		A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JrSwiftLabApp.swift; sourceTree = "<group>"; };
 		A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A212E2EF2B03F04B00D1C4CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A282D6522B0B8DF000C6B7F2 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		A282D6542B0B8E4D00C6B7F2 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		A2B114E62B03F25A0000B910 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		A2B114EC2B03F2E70000B910 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A282D6512B0B8DCB00C6B7F2 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A282D6522B0B8DF000C6B7F2 /* SplashScreenView.swift */,
+				A282D6542B0B8E4D00C6B7F2 /* ContainerView.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 		A2B114E92B03F2890000B910 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 		D917801A2B07AA580079EE04 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
+				A282D6512B0B8DCB00C6B7F2 /* SplashScreen */,
 				D917801B2B07AAC10079EE04 /* Cell */,
 				A212E2F62B03F0EB00D1C4CC /* UIKit */,
 				A2B114E92B03F2890000B910 /* Buttons */,
@@ -253,7 +267,9 @@
 				A212E2E92B03F04B00D1C4CC /* JrSwiftLabApp.swift in Sources */,
 				A2B114F12B03F32C0000B910 /* Framework.swift in Sources */,
 				A2B114EF2B03F2FF0000B910 /* XDismissButton.swift in Sources */,
+				A282D6532B0B8DF000C6B7F2 /* SplashScreenView.swift in Sources */,
 				A2B114F92B03F56D0000B910 /* FrameworkDetailView.swift in Sources */,
+				A282D6552B0B8E4D00C6B7F2 /* ContainerView.swift in Sources */,
 				D91780222B07AB9E0079EE04 /* FrameworkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
