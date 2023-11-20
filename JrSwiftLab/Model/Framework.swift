@@ -25,10 +25,10 @@ struct MockFrameworks {
     
     static let sections = [
         SectionData(name: "Roadmap", frameworks: MockData.roadmap),
-        SectionData(name: "Básico", frameworks: MockData.basic),
+        SectionData(name: "Aprendizado Básico", frameworks: MockData.basic),
         SectionData(name: "IDE", frameworks: MockData.ide),
         SectionData(name: "Versionamento de código", frameworks: MockData.versioning),
-        SectionData(name: "Aulas", frameworks: MockData.lessons),
+        SectionData(name: "Entrevistas", frameworks: MockData.lessons),
         SectionData(name: "Bibliotecas", frameworks: MockData.frameworks),
         SectionData(name: "Arquivos", frameworks: MockData.files)
     ]
