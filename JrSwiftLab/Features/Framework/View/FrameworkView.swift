@@ -26,15 +26,14 @@ struct FrameworkView: View {
                     }
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack {
                         Image(.logo)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 40, height: 40)
-                            .padding(.bottom)
+                            .frame(width: 35, height: 35, alignment: .center)
                         Text("Jr. SwiftLab")
                             .font(.title)
                             .fontWeight(.bold)
