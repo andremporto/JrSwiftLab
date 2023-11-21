@@ -11,7 +11,7 @@ import SwiftUI
 struct JrSwiftLabApp: App {
     var body: some Scene {
         WindowGroup {
-            FrameworkGridView()
+            ContainerView()
         }
     }
 }

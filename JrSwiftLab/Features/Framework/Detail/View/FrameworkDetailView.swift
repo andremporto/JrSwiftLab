@@ -21,7 +21,7 @@ struct FrameworkDetailView: View {
             ScrollView {
                 Text(framework.description)
                     .font(.body)
-                    .padding()
+                    .padding(20)
             }
             
             Spacer()
@@ -30,7 +30,7 @@ struct FrameworkDetailView: View {
                 isShowingSafariView = true
             } label: {
 //                AFButton(title: "Aprenda mais")
-                Label("Aprender mais", systemImage: "book.fill")
+                Label("Saiba mais", systemImage: "book.fill")
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
