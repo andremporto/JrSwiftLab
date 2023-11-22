@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct FrameworkView: View {
+struct HomeView: View {
     
     @ObservedObject var viewModel = FrameworkViewModel()
+    @State private var showInfo: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -57,6 +58,6 @@ struct FrameworkView: View {
 
 
 #Preview {
-    FrameworkView()
+    HomeView()
         .preferredColorScheme(.dark)
 }
