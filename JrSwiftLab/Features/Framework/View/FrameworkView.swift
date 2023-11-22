@@ -33,12 +33,21 @@ struct FrameworkView: View {
                         Image(.logo)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 35, height: 35, alignment: .center)
+                            .frame(width: 35, height: 35)
                         Text("Jr. SwiftLab")
                             .font(.title)
                             .fontWeight(.bold)
                     }
                 }
+                ToolbarItem(placement: .bottomBar) {
+                    HStack {
+                        CircleButtonView(iconName: "info")
+                        Spacer()
+                        CircleButtonView(iconName: "plus")
+                    }
+                    .padding(.top)
+                }
+                
             }
             .searchable(text: $viewModel.searchTerm, prompt: "Buscar")
         }
