@@ -16,10 +16,8 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             List {
-                /// section
                 ForEach(viewModel.data) { section in
                     Section(section.name) {
-                        /// framework row
                         ForEach(section.frameworks) { framework in
                             NavigationLink(
                                 destination: DetailView(
@@ -38,9 +36,9 @@ struct HomeView: View {
                         Image(.logo)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 35, height: 35)
+                            .frame(width: 32, height: 32)
                         Text("Jr. SwiftLab")
-                            .font(.title)
+                            .font(.title2)
                             .fontWeight(.bold)
                     }
                 }
@@ -68,5 +66,4 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
-    //        .preferredColorScheme(.dark)
 }

@@ -80,6 +80,7 @@
 				A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */,
 				D917801C2B07AB4F0079EE04 /* Core */,
 				A21C54312B0E1AC9002DCD29 /* Extensions */,
+				A2DA7B3E2B0CF35F00CEFF2C /* Settings */,
 				A212E2F82B03F11500D1C4CC /* Model */,
 				A212E2EE2B03F04B00D1C4CC /* Preview Content */,
 				A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */,
@@ -95,17 +96,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A212E2F62B03F0EB00D1C4CC /* UIKit */ = {
+		A212E2F62B03F0EB00D1C4CC /* Safari */ = {
 			isa = PBXGroup;
 			children = (
 				A2B114E62B03F25A0000B910 /* SafariView.swift */,
 			);
-			path = UIKit;
+			path = Safari;
 			sourceTree = "<group>";
 		};
 		A212E2F82B03F11500D1C4CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D91780212B07AB9E0079EE04 /* FrameworkViewModel.swift */,
 				A2B114F02B03F32C0000B910 /* Framework.swift */,
 			);
 			path = Model;
@@ -117,6 +119,14 @@
 				A21C54322B0E1B21002DCD29 /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A21C54342B0E3107002DCD29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA7B402B0CF3F700CEFF2C /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A282D6512B0B8DCB00C6B7F2 /* SplashScreen */ = {
@@ -133,6 +143,7 @@
 			children = (
 				A2B114EC2B03F2E70000B910 /* AFButton.swift */,
 				A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */,
+				A2DA7B422B0CF56800CEFF2C /* XMarkButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -140,8 +151,7 @@
 		A2DA7B3E2B0CF35F00CEFF2C /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				A2DA7B402B0CF3F700CEFF2C /* SettingsView.swift */,
-				A2DA7B422B0CF56800CEFF2C /* XMarkButton.swift */,
+				A21C54342B0E3107002DCD29 /* Views */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -160,9 +170,8 @@
 				A2DA7B442B0CF8B800CEFF2C /* CircleButton */,
 				A2B114E92B03F2890000B910 /* Buttons */,
 				D917801B2B07AAC10079EE04 /* Cell */,
-				A2DA7B3E2B0CF35F00CEFF2C /* Settings */,
 				A282D6512B0B8DCB00C6B7F2 /* SplashScreen */,
-				A212E2F62B03F0EB00D1C4CC /* UIKit */,
+				A212E2F62B03F0EB00D1C4CC /* Safari */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,43 +196,10 @@
 		D917801D2B07AB580079EE04 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D917801E2B07AB710079EE04 /* View */,
-				D917801F2B07AB790079EE04 /* ViewModel */,
-				D91780252B07AEE80079EE04 /* Detail */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		D917801E2B07AB710079EE04 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				D91780232B07ABAA0079EE04 /* HomeView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D917801F2B07AB790079EE04 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				D91780212B07AB9E0079EE04 /* FrameworkViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		D91780252B07AEE80079EE04 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				D91780262B07AEFB0079EE04 /* View */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		D91780262B07AEFB0079EE04 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				A2B114F82B03F56D0000B910 /* DetailView.swift */,
 			);
-			path = View;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
