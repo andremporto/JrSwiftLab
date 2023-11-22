@@ -65,5 +65,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
-        .preferredColorScheme(.dark)
+//        .preferredColorScheme(.dark)
 }
