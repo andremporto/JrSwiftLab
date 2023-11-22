@@ -14,11 +14,11 @@
 		A282D6532B0B8DF000C6B7F2 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282D6522B0B8DF000C6B7F2 /* SplashScreenView.swift */; };
 		A282D6552B0B8E4D00C6B7F2 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282D6542B0B8E4D00C6B7F2 /* ContainerView.swift */; };
 		A2B114E72B03F25A0000B910 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114E62B03F25A0000B910 /* SafariView.swift */; };
-		A2B114EB2B03F2A70000B910 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */; };
+		A2B114EB2B03F2A70000B910 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EA2B03F2A70000B910 /* TitleView.swift */; };
 		A2B114ED2B03F2E70000B910 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EC2B03F2E70000B910 /* AFButton.swift */; };
 		A2B114EF2B03F2FF0000B910 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */; };
 		A2B114F12B03F32C0000B910 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F02B03F32C0000B910 /* Framework.swift */; };
-		A2B114F92B03F56D0000B910 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */; };
+		A2B114F92B03F56D0000B910 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B114F82B03F56D0000B910 /* DetailView.swift */; };
 		A2DA7B412B0CF3F700CEFF2C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA7B402B0CF3F700CEFF2C /* SettingsView.swift */; };
 		A2DA7B432B0CF56800CEFF2C /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA7B422B0CF56800CEFF2C /* XMarkButton.swift */; };
 		A2DA7B462B0CF8D400CEFF2C /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA7B452B0CF8D400CEFF2C /* CircleButtonView.swift */; };
@@ -35,11 +35,11 @@
 		A282D6522B0B8DF000C6B7F2 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		A282D6542B0B8E4D00C6B7F2 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		A2B114E62B03F25A0000B910 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
-		A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		A2B114EA2B03F2A70000B910 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		A2B114EC2B03F2E70000B910 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		A2B114EE2B03F2FF0000B910 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		A2B114F02B03F32C0000B910 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
-		A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		A2B114F82B03F56D0000B910 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A2DA7B402B0CF3F700CEFF2C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A2DA7B422B0CF56800CEFF2C /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		A2DA7B452B0CF8D400CEFF2C /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
@@ -78,9 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				A212E2E82B03F04B00D1C4CC /* JrSwiftLabApp.swift */,
+				D917801C2B07AB4F0079EE04 /* Core */,
 				A21C54312B0E1AC9002DCD29 /* Extensions */,
-				D917801A2B07AA580079EE04 /* Components */,
-				D917801C2B07AB4F0079EE04 /* Features */,
 				A212E2F82B03F11500D1C4CC /* Model */,
 				A212E2EE2B03F04B00D1C4CC /* Preview Content */,
 				A212E2EC2B03F04B00D1C4CC /* Assets.xcassets */,
@@ -171,17 +170,18 @@
 		D917801B2B07AAC10079EE04 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				A2B114EA2B03F2A70000B910 /* FrameworkTitleView.swift */,
+				A2B114EA2B03F2A70000B910 /* TitleView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		D917801C2B07AB4F0079EE04 /* Features */ = {
+		D917801C2B07AB4F0079EE04 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D917801A2B07AA580079EE04 /* Components */,
 				D917801D2B07AB580079EE04 /* Home */,
 			);
-			path = Features;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		D917801D2B07AB580079EE04 /* Home */ = {
@@ -221,7 +221,7 @@
 		D91780262B07AEFB0079EE04 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A2B114F82B03F56D0000B910 /* FrameworkDetailView.swift */,
+				A2B114F82B03F56D0000B910 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,13 +301,13 @@
 				A2DA7B462B0CF8D400CEFF2C /* CircleButtonView.swift in Sources */,
 				A2B114E72B03F25A0000B910 /* SafariView.swift in Sources */,
 				A2DA7B432B0CF56800CEFF2C /* XMarkButton.swift in Sources */,
-				A2B114EB2B03F2A70000B910 /* FrameworkTitleView.swift in Sources */,
+				A2B114EB2B03F2A70000B910 /* TitleView.swift in Sources */,
 				A212E2E92B03F04B00D1C4CC /* JrSwiftLabApp.swift in Sources */,
 				A2B114F12B03F32C0000B910 /* Framework.swift in Sources */,
 				A21C54332B0E1B21002DCD29 /* Color.swift in Sources */,
 				A2B114EF2B03F2FF0000B910 /* XDismissButton.swift in Sources */,
 				A282D6532B0B8DF000C6B7F2 /* SplashScreenView.swift in Sources */,
-				A2B114F92B03F56D0000B910 /* FrameworkDetailView.swift in Sources */,
+				A2B114F92B03F56D0000B910 /* DetailView.swift in Sources */,
 				A2DA7B412B0CF3F700CEFF2C /* SettingsView.swift in Sources */,
 				A282D6552B0B8E4D00C6B7F2 /* ContainerView.swift in Sources */,
 				D91780222B07AB9E0079EE04 /* FrameworkViewModel.swift in Sources */,

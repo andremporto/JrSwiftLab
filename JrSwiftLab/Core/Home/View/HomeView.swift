@@ -21,9 +21,12 @@ struct HomeView: View {
                     Section(section.name) {
                         /// framework row
                         ForEach(section.frameworks) { framework in
-                            NavigationLink(destination: FrameworkDetailView(framework: framework, isShowDetailView: $viewModel.isShowingDetailView)) {
-                                FrameworkTitleView(framework: framework)
-                            }
+                            NavigationLink(
+                                destination: DetailView(
+                                    framework: framework,
+                                    isShowDetailView: $viewModel.isShowingDetailView)) {
+                                        TitleView(framework: framework)
+                                    }
                         }
                     }
                 }
@@ -65,5 +68,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
-//        .preferredColorScheme(.dark)
+    //        .preferredColorScheme(.dark)
 }
