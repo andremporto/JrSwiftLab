@@ -29,13 +29,17 @@ struct FrameworkDetailView: View {
             Button {
                 isShowingSafariView = true
             } label: {
-//                AFButton(title: "Aprenda mais")
                 Label("Saiba mais", systemImage: "book.fill")
             }
+//            .backgroundStyle(
+//                LinearGradient(
+//                    colors: [.red, .orange],
+//                    startPoint: .top,
+//                    endPoint: .bottom)
+//            )
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
             .foregroundStyle(.white)
-//            .buttonBorderShape(.capsule)
             .tint(.red)
         }
         .sheet(isPresented: $isShowingSafariView, content: {
