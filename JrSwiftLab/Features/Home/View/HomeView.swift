@@ -11,6 +11,7 @@ struct HomeView: View {
     
     @ObservedObject var viewModel = FrameworkViewModel()
     @State private var showInfo: Bool = false
+    @State private var showPlus: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -45,6 +46,11 @@ struct HomeView: View {
                         CircleButtonView(iconName: "info")
                         Spacer()
                         CircleButtonView(iconName: "plus")
+                            .onTapGesture {
+                                withAnimation(.spring) {
+                                    showPlus.toggle()
+                                }
+                            }
                     }
                     .padding(.top)
                 }
