@@ -46,7 +46,7 @@ struct SplashScreenView: View {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
                 withAnimation(.easeOut(duration: 0.5)) {
-                    scale = CGSize(width: 50, height: 50)
+                    scale = CGSize(width: 200, height: 200)
                     opacity = 0
                 }
             })

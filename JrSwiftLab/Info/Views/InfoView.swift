@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct InfoView: View {
     
     let defaultURL = URL(string: "https://www.google.com.br")!
-    //    let youtubeURL = URL(string: "https://www.youtube.com/@AndrePorto")!
     let portfolioURL = URL(string: "https://andreporto.dev.br")!
     let linkedinURL = URL(string: "https://www.linkedin.com/in/andremporto/")!
     let githubURL = URL(string: "https://github.com/andremporto")!
@@ -36,7 +35,7 @@ struct SettingsView: View {
             .navigationTitle("Informações")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    //                    XMarkButton()
+                    XMarkButton()
                 }
             }
         }
@@ -45,11 +44,11 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        InfoView()
     }
 }
 
-extension SettingsView {
+extension InfoView {
     
     private var appSection: some View {
         Section {
@@ -105,41 +104,47 @@ extension SettingsView {
                 Image(.portfolio)
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .padding(.trailing)
                 Link("Portfólio", destination: portfolioURL)
             }
             HStack {
                 Image(.linkedin)
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .padding(.trailing)
                 Link("LinkedIn", destination: linkedinURL)
             }
             HStack {
                 Image(.githubLink)
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .padding(.trailing)
                 Link("GitHub", destination: githubURL)
             }
             HStack {
                 Image(.instagram)
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .padding(.trailing)
                 Link("Instagram", destination: instagramURL)
             }
             HStack {
                 Image(.twitter)
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .padding(.trailing)
                 Link("Twitter", destination: twitterURL)
             }
             HStack {
                 Image(.article)
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .padding(.trailing)
                 Link("Meus Artigos", destination: arcticleURL)
             }
             
         } header: {
-            Text("Follow me")
+            Text("mais informaões")
         }
     }
     
