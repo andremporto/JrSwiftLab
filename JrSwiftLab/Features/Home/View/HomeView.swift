@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct FrameworkView: View {
+struct HomeView: View {
     
     @ObservedObject var viewModel = FrameworkViewModel()
+    @State private var showInfo: Bool = false
+    @State private var showPlus: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -33,12 +35,26 @@ struct FrameworkView: View {
                         Image(.logo)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 35, height: 35, alignment: .center)
+                            .frame(width: 35, height: 35)
                         Text("Jr. SwiftLab")
                             .font(.title)
                             .fontWeight(.bold)
                     }
                 }
+                ToolbarItem(placement: .bottomBar) {
+                    HStack {
+                        CircleButtonView(iconName: "info")
+                        Spacer()
+                        CircleButtonView(iconName: "plus")
+                            .onTapGesture {
+                                withAnimation(.spring) {
+                                    showPlus.toggle()
+                                }
+                            }
+                    }
+                    .padding(.top)
+                }
+                
             }
             .searchable(text: $viewModel.searchTerm, prompt: "Buscar")
         }
@@ -48,6 +64,6 @@ struct FrameworkView: View {
 
 
 #Preview {
-    FrameworkView()
-        .preferredColorScheme(.dark)
+    HomeView()
+//        .preferredColorScheme(.dark)
 }
