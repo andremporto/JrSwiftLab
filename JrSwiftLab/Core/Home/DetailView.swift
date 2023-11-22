@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FrameworkDetailView: View {
+struct DetailView: View {
     
     var framework: Framework
     @Binding var isShowDetailView: Bool
@@ -17,7 +17,7 @@ struct FrameworkDetailView: View {
         VStack {
             Spacer()
             
-            FrameworkTitleView(framework: framework)
+            TitleView(framework: framework)
             ScrollView {
                 Text(framework.description)
                     .font(.body)
@@ -49,6 +49,6 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramwork, isShowDetailView: .constant(false))
+    DetailView(framework: MockData.sampleFramwork, isShowDetailView: .constant(false))
         .preferredColorScheme(.dark)
 }

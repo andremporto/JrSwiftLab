@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FrameworkTitleView: View {
+struct TitleView: View {
     
     let framework: Framework
     
@@ -27,5 +27,5 @@ struct FrameworkTitleView: View {
 }
 
 #Preview {
-    FrameworkTitleView(framework: MockData.sampleFramwork)
+    TitleView(framework: MockData.sampleFramwork)
 }
