@@ -31,12 +31,6 @@ struct DetailView: View {
             } label: {
                 Label("Saiba mais", systemImage: "book.fill")
             }
-//            .backgroundStyle(
-//                LinearGradient(
-//                    colors: [.red, .orange],
-//                    startPoint: .top,
-//                    endPoint: .bottom)
-//            )
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
             .foregroundStyle(.white)

@@ -23,8 +23,8 @@ struct InfoView: View {
                 List {
                     appSection
                         .listRowBackground(Color.theme.background.opacity(0.5))
-                    applicationSection
-                        .listRowBackground(Color.theme.background.opacity(0.5))
+//                    applicationSection
+//                        .listRowBackground(Color.theme.background.opacity(0.5))
                     followMeSection
                         .listRowBackground(Color.theme.background.opacity(0.5))
                 }
@@ -52,13 +52,13 @@ extension InfoView {
     
     private var appSection: some View {
         Section {
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 Image(.appIconLogo)
                     .resizable()
                     .frame(width: 80, height: 80)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     .padding(.bottom)
-                Text("O aplicativo Jr. SwiftLab é simplesmente o aplicativo mais lindo de todo universo")
+                Text("Prepare-se para sua entrevista de emprego com o Jr. SwiftLab.\n\nO Swift é uma linguagem de programação moderna e poderosa, usada para criar aplicativos para iPhone, iPad e Mac. Se você é um desenvolvedor júnior, este aplicativo é perfeito para você.\n\nCom este aplicativo, você estará pronto para sua próxima entrevista de emprego e terá mais chances de conseguir o emprego dos seus sonhos.\n\n\nO aplicativo Jr. SwiftLab foi idealizado e desenvolvido por André Porto.\n\nJr. SwiftLab 2023 © All rigths reserved.")
                     .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(Color.theme.accent)
@@ -71,32 +71,32 @@ extension InfoView {
         }
     }
     
-    private var andreInfoSection: some View {
-        Section {
-            VStack(alignment: .leading) {
-                Image(.fotoperfil)
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                    .padding(.bottom)
-                Text("Olá, eu sou o André Porto. Desenvolvedor iOS com experiência em SwiftUI, Firebase, SwiftData, CoreData, API, Git, GitFlow, Clean Code.\n\nFormado em Design e Psicologia, possuo 20 anos de experiência em design gráfico, desenvolvimento front-end e design de interfaces do usuário além de experiência em Tipografia e UI/UX.")
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.theme.accent)
-            }
-            .padding(.vertical)
-            Link("Portfólio", destination: portfolioURL)
-            Link("LinkedIn", destination: linkedinURL)
-            Link("GitHub", destination: githubURL)
-            Link("Instagram", destination: instagramURL)
-            Link("Twitter", destination: twitterURL)
-            Link("Meus Artigos", destination: arcticleURL)
-            //            Link("YouTube", destination: youtubeURL)
-            
-        } header: {
-            Text("The Developer")
-        }
-    }
+//    private var andreInfoSection: some View {
+//        Section {
+//            VStack(alignment: .leading) {
+//                Image(.fotoperfil)
+//                    .resizable()
+//                    .frame(width: 80, height: 80)
+//                    .clipShape(RoundedRectangle(cornerRadius: 15))
+//                    .padding(.bottom)
+//                Text("Olá, eu sou o André Porto. Desenvolvedor iOS com experiência em SwiftUI, Firebase, SwiftData, CoreData, API, Git, GitFlow, Clean Code.\n\nFormado em Design e Psicologia, possuo 20 anos de experiência em design gráfico, desenvolvimento front-end e design de interfaces do usuário além de experiência em Tipografia e UI/UX.")
+//                    .font(.callout)
+//                    .fontWeight(.medium)
+//                    .foregroundColor(Color.theme.accent)
+//            }
+//            .padding(.vertical)
+//            Link("Portfólio", destination: portfolioURL)
+//            Link("LinkedIn", destination: linkedinURL)
+//            Link("GitHub", destination: githubURL)
+//            Link("Instagram", destination: instagramURL)
+//            Link("Twitter", destination: twitterURL)
+//            Link("Meus Artigos", destination: arcticleURL)
+//            //            Link("YouTube", destination: youtubeURL)
+//            
+//        } header: {
+//            Text("The Developer")
+//        }
+//    }
     
     private var followMeSection: some View {
         Section {
@@ -144,16 +144,16 @@ extension InfoView {
             }
             
         } header: {
-            Text("mais informaões")
+            Text("Siga-me nas redes sociais")
         }
     }
     
-    private var applicationSection: some View {
-        Section {
-            Link("Termos de Serviço", destination: defaultURL)
-            Link("Politica de Privacidade", destination: defaultURL)
-        } header: {
-            Text("Regras de uso")
-        }
-    }
+//    private var applicationSection: some View {
+//        Section {
+//            Link("Termos de Serviço", destination: defaultURL)
+//            Link("Politica de Privacidade", destination: defaultURL)
+//        } header: {
+//            Text("Regras de uso")
+//        }
+//    }
 }

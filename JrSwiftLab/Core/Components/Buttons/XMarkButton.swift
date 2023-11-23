@@ -10,8 +10,7 @@ import SwiftUI
 struct XMarkButton: View {
     
 //    @Environment(\.presentationMode) var presentationMode
-    
-    @Environment(\.dismiss) private var dismiss
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         Button {
